@@ -53,7 +53,7 @@ app.use("/api", DashboardRoutes);
 
 app.get("/", (req, res) => {
    try {
-      res.send("Node WORKING, Welcome");
+      res.status(200).json({ heath: "Ok" });
    } catch (error) {
       console.log(error);
    }
